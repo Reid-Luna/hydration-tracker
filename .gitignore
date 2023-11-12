@@ -1,5 +1,5 @@
 /node_modules
 .*
-!.gitignore
+!.git*
 yarn.lock
 data.json

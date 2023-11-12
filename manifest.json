@@ -2,7 +2,7 @@
   "id": "hydration-tracker",
   "name": "Hydration Tracker",
   "author": "Reid Luna",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Tracks daily water intake",
   "isDesktopOnly": false
 }
