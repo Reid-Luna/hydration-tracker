@@ -1,0 +1,26 @@
+{
+  "name": "hydrate",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-import-css": "^3.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "babel": "^6.23.0",
+    "obsidian": "^1.4.11",
+    "rollup": "^4.3.0"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c --environment BUILD:production"
+  }
+}
