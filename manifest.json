@@ -4,5 +4,6 @@
   "author": "Reid Luna",
   "version": "0.1.0",
   "description": "Tracks daily water intake",
-  "isDesktopOnly": false
+  "isDesktopOnly": false,
+  "js": "main.js"
 }

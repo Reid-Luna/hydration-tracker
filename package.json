@@ -1,9 +1,9 @@
 {
   "name": "hydrate",
-  "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "main.js",
   "dependencies": {
+    "builtin-modules": "^3.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup-plugin-import-css": "^3.3.5"
@@ -16,11 +16,13 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.5",
     "babel": "^6.23.0",
+    "esbuild": "^0.19.5",
     "obsidian": "^1.4.11",
     "rollup": "^4.3.0"
   },
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c --environment BUILD:production"
+    "rollup": "rollup -c  && yarn build",
+    "build": "node .esbuild.config.mjs production"
   }
 }

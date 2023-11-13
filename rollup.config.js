@@ -1,14 +1,17 @@
-import babel from "@rollup/plugin-babel";
-import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
-export default {
+const babel = require("@rollup/plugin-babel");
+const commonjs = require("@rollup/plugin-commonjs");
+const resolve = require("@rollup/plugin-node-resolve");
+const builtinModules = require("builtin-modules");
+module.exports = {
   input: "src/main.js",
   output: {
-    file: "main.js",
+    file: "roll_main.js",
     format: "cjs",
     exports: "default",
+    sourcemap: "inline",
+    sourcemapExcludeSources: true,
   },
-  external: ["obsidian", "fs", "os", "path"],
+  external: ["obsidian"], //, ...builtinModules
   plugins: [
     resolve({
       browser: true,
